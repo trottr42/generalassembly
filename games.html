@@ -1,0 +1,114 @@
+<DOCTYPE html>
+<head>
+<script type="text/javascript" src="functions.js"></script>
+<link href="style.css" rel="stylesheet"
+<link link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
+<style>
+	header {
+	text-align: center;
+    background: url('https://i.imgur.com/DmDJkyo.jpg');
+    background-size: cover;
+    color: white;
+   }
+div {
+	text-align: center;
+}
+
+.profile {
+	text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 40px;
+   }
+
+a {
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+   }
+
+h1 {
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif, weight="bold";
+   }
+
+.me {
+   	margin: 40px 0px 0px 0px;
+    background: black;
+    border: 5px solid white;
+    border-radius: 40px;
+    }
+
+ul {
+    padding: 10px;
+    background: rgba(0,0,0,0.7);
+   }
+   
+li {
+    display: inline;
+    padding: 0px 15px 0px 15px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Lato', sans-serif;
+  margin: 40px;
+}
+h3 {
+  text-align: center;
+}
+input {
+    border: 5px solid grey;
+    padding: 10px;
+    font-size: 18px;
+    width: 600px;
+    text-align: left;
+    }
+input[type="submit"] {
+    background: red;
+    color: white;
+    width: 100px;
+    margin-left: 0;
+    border: 5px solid red;
+    margin-bottom: 40px;
+    }
+.choices {
+  display: inline;
+  padding: 40px 20px 10px 20px;
+  text-align: center;
+  
+}
+.computerChoice {
+  border: 5px solid black;
+  }
+.outcome {
+  text-align: center;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img class="me" src="https://i.imgur.com/YLM1wu4.jpg" width=300/>
+      <h1>Matt's Website</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">ABOUT ME</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="games.html">GAMES</a></li>
+    </ul>
+  </header>
+  <h2>Let's play rock, paper, scissors, shoot!</h2>
+  <h3>
+    <input type="text" placeholder="Type Your Choice Here!" id="userChoice">
+    <input type="submit">
+  </h3>
+  <div>
+    <li class="choices"><img class="computerChoice" id="rock" src="https://i.imgur.com/7X0xHoI.jpg" height=300 width=300/></li>
+    <li class="choices"><img class="computerChoice" id="paper" src="http://tmib.com/wp-content/uploads/2014/08/stack-of-paper.jpg" height=300 width=300/></li>
+    <li class="choices"><img class="computerChoice" id="scissors" src="https://i.imgur.com/Oxls2eN.jpg" height=300 width=300/></li>
+  </div>
+  <div class="outcome" id="outcome">"Who will win?"</div>>
+</body>

@@ -1,0 +1,151 @@
+<DOCTYPE html>
+<head>
+<script src="functions.js"></script>
+<link href="style.css" rel="stylesheet"
+<link link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
+<style>
+	header {
+	text-align: center;
+    background: url('https://i.imgur.com/DmDJkyo.jpg');
+    background-size: cover;
+    color: white;
+   }
+div {
+	text-align: center;
+}
+
+.profile {
+	text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 40px;
+   }
+
+a {
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+   }
+
+h1 {
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif, weight="bold";
+   }
+
+.me {
+   	margin: 40px 0px 0px 0px;
+    background: black;
+    border: 5px solid white;
+    border-radius: 40px;
+    }
+
+ul {
+    padding: 10px;
+    background: rgba(0,0,0,0.7);
+   }
+   
+li {
+    display: inline;
+    padding: 0px 15px 0px 15px;
+   }
+h2 {
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Lato', sans-serif;
+}
+.gallery {
+	display: inline;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	
+}
+.adventure {
+	border: 5px solid black;
+	cursor: pointer;
+}
+.caption {
+	text-align: center;
+	display: inline-block;
+	max-width: 310px;
+	padding: 20px 20px 50px 20px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+
+</style>
+</head>
+<body>
+	<header>
+		<div class="profile">
+			<img class="me" src="https://i.imgur.com/YLM1wu4.jpg" width=300/>
+			<h1>Matt's Website</h1>
+		</div>
+		<ul>
+			<li><a href="index.html">ABOUT ME</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="games.html">GAMES</a></li>
+		</ul>
+	</header>
+	<h2><i>Let's Go Build Some Cool Stuff!!!</i></h2>
+	<div>
+		<li class="gallery" onclick="selectTude()"><img class="adventure" id="tude" onclick="selectTude()" src="https://i.imgur.com/PN3af01.jpg" width=300/></li>
+		<li class="gallery"><img class="adventure" id="dubai" src="https://i.imgur.com/XGsD1sZ.jpg" width=300/></li>
+		<li class="gallery"><img class="adventure" id="scuba" src="https://i.imgur.com/ioTQ2Mb.jpg" width=300/></li>
+		<li class="gallery"><img class="adventure" id="ryan" src="https://i.imgur.com/njpHRy2.jpg" width=300/></li>
+	</div>
+	<div>
+		<div class="caption" id="tudeCaption">This is my guide Tude.  He was a righteous dude!</div>
+		<div class="caption" id="dubaiCaption">I use to work for an Indian investment bank.  We went to Dubai to party!</div>
+		<div class="caption" id="scubaCaption">I love scuba diving.  It makes me feel very Zen :)</div>
+		<div class="caption" id="ryanCaption">Me and my best friend love going on outdoor adventures.</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		const selectTude() {
+			document.getElementById("tude").style.backgroundColor = "green";
+			document.getElementById("tudeCaption").style.color = "black";
+		}
+	</script>
+	<!--
+		$('dubai').onclick = highlightDubai;
+		$('scuba').onclick = highlightScuba;
+		$('ryan').onclick = highlightRyan;
+
+	const highlightTude() {
+		clearPics();
+		$('tude').style.border = 5"green";
+		$('tudeCaption').style.color = "black";
+	};
+
+	const highlightDubai() {
+		clearPics();
+		$('dubai').style.border = "green";
+		$('dubaiCaption').style.color = "black";
+	};
+
+	const highlightDubai() {
+		clearPics();
+		$('scuba').style.border = "green";
+		$('scubaCaption').style.color = "black";
+	};
+
+	const highlightRyan() {
+		clearPics();
+		$('ryan').style.border = "green";
+		$('ryanCaption').style.color = "black"
+};
+
+	const clearPics() {
+		$('tude').style.border = "black";
+		$('tudeCaption').style.color = "white";
+		$('dubai').style.border = "black";
+		$('dubaiCaption').style.color = "white";
+		$('scuba').style.border = "black";
+		$('scubaCaption').style.color = "white";
+		$('ryan').style.border = "black";
+		$('ryanCaption').style.color = "white";
+};
+	</script>
+	-->
